@@ -1,0 +1,34 @@
+:root {
+  font-size: 62.5%;
+  --clr-brand: #97EDAA;
+  --clr-dark-10: #0B0B0B;
+  --clr-dark-20: #101010;
+  --clr-dark-30: #1F1F1F;
+  --clr-dark-40: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  font-family: 'Archivo', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button,
+fieldset {
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
