@@ -5,6 +5,7 @@
   --clr-dark-20: #101010;
   --clr-dark-30: #1F1F1F;
   --clr-dark-40: #FFFFFF;
+  --icon-size: 6.2rem;
 }
 
 * {
@@ -15,6 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.6rem;
   font-family: 'Archivo', sans-serif;
+  color: var(--clr-dark-40);
 }
 
 a {
@@ -31,4 +33,152 @@ fieldset {
 
 ul {
   list-style: none;
+}
+
+body {
+  background-color: var(--clr-dark-10);
+}
+
+button {
+  padding: 1rem 4rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  max-width: fit-content;
+}
+
+.btn-primary {
+  background-color: var(--clr-brand);
+  color: var(--clr-dark-10);
+}
+
+.btn-secundary {
+  border: 1px solid var(--clr-brand);
+  color: var(--clr-brand);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.2rem 20rem;
+}
+
+header .logo h2 {
+  color: var(--clr-brand);
+  font-family: 'Fira Code', serif;
+}
+
+header ul.menu {
+  display: flex;
+  gap: 5.6rem;
+}
+
+header ul.menu li a {
+  transition: color 0.3s;
+}
+
+header ul.menu li a:hover {
+  color: var(--clr-brand);
+}
+
+main {
+  padding-inline: 20rem;
+}
+
+main #presentation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#presentation .presentation-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#presentation .presentation-content strong {
+  margin-bottom: 1.2rem;
+}
+
+#presentation .presentation-content h1 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--clr-brand);
+  margin-bottom: 3.2rem;
+}
+
+#presentation .presentation-content p {
+  margin-bottom: 4.8rem;
+  font-size: 2.4rem;
+}
+
+#about h3 {
+  margin-top: 6rem;
+  margin-bottom: 4.8rem;
+  color: var(--clr-brand);
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+#about p {
+  font-size: clamp(1.6rem, 2rem, 2.4rem);
+  line-height: 160%;
+  text-align: center;
+}
+
+#about .about-me-list {
+  margin-top: 6.4rem;
+}
+
+#about .about-me-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 14rem;
+}
+
+#about .about-me-list li {
+  display: grid;
+  place-items: center;
+}
+
+#about .about-me-list li img {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-bottom: 2.4rem;
+}
+
+#about .about-me-list li strong {
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+}
+
+#about .about-me-list li p {
+  font-size: 1.8rem;
+}
+
+
+
+#projects {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  padding: 3.8rem 20rem;
+  background-color: var(--clr-dark-20);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
 }
