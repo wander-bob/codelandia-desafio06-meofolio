@@ -39,7 +39,8 @@ body {
   background-color: var(--clr-dark-10);
 }
 
-button {
+button,
+.project-links a {
   padding: 1rem 4rem;
   border-radius: 0.4rem;
   display: flex;
@@ -47,6 +48,13 @@ button {
   justify-content: center;
   font-weight: 500;
   max-width: fit-content;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover,
+.project-links a:hover {
+  opacity: 0.7;
 }
 
 .btn-primary {
@@ -54,7 +62,7 @@ button {
   color: var(--clr-dark-10);
 }
 
-.btn-secundary {
+.btn-secondary {
   border: 1px solid var(--clr-brand);
   color: var(--clr-brand);
 }
@@ -76,7 +84,7 @@ header ul.menu {
 }
 
 header ul.menu li a {
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 header ul.menu li a:hover {
@@ -162,11 +170,72 @@ main #presentation {
 }
 
 
+#projects h3 {
+  text-align: center;
+  color: var(--clr-brand);
+  font-size: 3.2rem;
+  font-weight: 400;
+}
 
-#projects {
+#projects .projects-container {
+  margin-top: 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  column-gap: 3.2rem;
+  row-gap: 6.4rem;
+}
+
+#projects .projects-container .project-sample {
+  background-color: var(--clr-dark-20);
+  border: 1px solid var(--clr-dark-30);
+  border-radius: 0.4rem;
+  min-height: 20rem;
+  min-width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
+#projects .projects-container .project-example {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#projects .projects-container .project-example .project-sample span {
+  color: var(--clr-brand);
+  font-size: 2.4rem;
+}
+
+#projects .projects-container .project-example .project-presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+#projects .projects-container .project-example .project-presentation h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+#projects .projects-container .project-example .project-presentation small {
+  color: var(--clr-brand);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+
+#projects .projects-container .project-example .project-links {
+  display: flex;
+  gap: 3.2rem;
+}
+
+#projects .projects-container .project-example .project-links a {
+  text-wrap: nowrap;
+  max-width: fit-content;
+}
+
 
 footer {
   padding: 3.8rem 20rem;
