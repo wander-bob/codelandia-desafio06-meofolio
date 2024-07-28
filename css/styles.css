@@ -92,7 +92,10 @@ header ul.menu li a:hover {
 }
 
 main {
-  padding-inline: 20rem;
+  padding: 15rem 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
 }
 
 main #presentation {
@@ -124,7 +127,6 @@ main #presentation {
 }
 
 #about h3 {
-  margin-top: 6rem;
   margin-bottom: 4.8rem;
   color: var(--clr-brand);
   text-align: center;
@@ -146,7 +148,6 @@ main #presentation {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 14rem;
 }
 
 #about .about-me-list li {
@@ -169,7 +170,6 @@ main #presentation {
   font-size: 1.8rem;
 }
 
-
 #projects h3 {
   text-align: center;
   color: var(--clr-brand);
@@ -179,22 +179,21 @@ main #presentation {
 
 #projects .projects-container {
   margin-top: 4.8rem;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-items: center;
   column-gap: 3.2rem;
   row-gap: 6.4rem;
 }
 
 #projects .projects-container .project-sample {
-  background-color: var(--clr-dark-20);
-  border: 1px solid var(--clr-dark-30);
-  border-radius: 0.4rem;
-  min-height: 20rem;
-  min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 20rem;
+  background-color: var(--clr-dark-20);
+  border: 1px solid var(--clr-dark-30);
+  border-radius: 0.4rem;
 }
 
 #projects .projects-container .project-example {
@@ -225,7 +224,6 @@ main #presentation {
   font-weight: 500;
 }
 
-
 #projects .projects-container .project-example .project-links {
   display: flex;
   gap: 3.2rem;
@@ -233,9 +231,59 @@ main #presentation {
 
 #projects .projects-container .project-example .project-links a {
   text-wrap: nowrap;
-  max-width: fit-content;
 }
 
+#services h3 {
+  text-align: center;
+  color: var(--clr-brand);
+  font-size: 3.2rem;
+}
+
+#services .services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+
+#services .services-container .service-sample {
+  width: 100%;
+  height: 24rem;
+  padding: 3.2rem 4rem;
+  background: var(--clr-dark-20);
+  border: 1px solid var(--clr-dark-30);
+  border-bottom: 2px solid var(--clr-brand);
+}
+
+#services .services-container .service-sample h4 {
+  margin-top: 3.8rem;
+  font-size: 3.2rem;
+}
+
+#skills h3 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--clr-brand);
+}
+
+#skills .techs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.2rem;
+  margin-top: 4.8rem;
+}
+
+#skills .techs .tech-icon {
+  height: 12rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--clr-dark-20);
+  border: 1px solid var(--clr-dark-30);
+}
 
 footer {
   padding: 3.8rem 20rem;
@@ -250,4 +298,14 @@ footer span {
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
+}
+
+@media (min-width: 1480px) {
+
+  header,
+  main,
+  footer {
+    padding-inline: 32rem;
+  }
+
 }
